@@ -1,0 +1,37 @@
+html
+	head
+		meta(charset="utf-8")
+		title Акции
+		include inc/head.jade
+		include inc/css.jade
+	body.inner
+		#page-wr
+			#content
+				include inc/header.jade
+				.title-block__cont
+					.wrapper
+						.title-block
+							.title-block__crumbs
+								.bread-crumbs
+									a.bread-crumbs__link(href='#') Главная
+									span.bread-crumbs__this Акции
+							.title-block__title
+								h1 Акции
+				.wrapper
+					.sale
+						.sale__list
+							- for (var i = 0; i < 8; i++)
+								a(href="#").sale__item 
+									figure.sale__item-img 
+										img(src="img/photos/sale-"+(i+1)+".jpg")
+									.sale__info
+										.sale__item-data 06.08.2018
+										.sale__item-title Скидка на все буровые штанги 20%.
+
+						include inc/paginator.jade
+				
+
+
+
+			include inc/footer.jade
+		include inc/scripts.jade

@@ -1,0 +1,54 @@
+html
+	head
+		meta(charset="utf-8")
+		title Оборудование
+		include inc/head.jade
+		include inc/css.jade
+	body.inner
+		#page-wr
+			#content
+				include inc/header.jade
+				.title-block__cont
+					.wrapper
+						.title-block
+							.title-block__crumbs
+								.bread-crumbs
+									a.bread-crumbs__link(href='#') Главная
+									span.bread-crumbs__this Оборудование
+							.title-block__title
+								h1 Оборудование
+				.wrapper
+					.equipment__cont
+						.equipment
+							.equipment-title Камнерезные станки
+							.equipment__list
+								each title, i in ['Камнерезные станки мостовые, козловые, портальные', 'Станки для резки слэбов', 'Станки для шлифовки и полировки камня ']
+									a(href="#").equipment__item
+										figure.equipment__item-img
+											img(src="img/photos/1-"+(i+1)+".jpg", alt="")
+										.equipment__item-title=title
+						.equipment
+							.equipment-title Оборудование для карьеров 
+							.equipment__list
+								each title, i in ['Канатные машины', 'Штанги буровые', 'Коронки буровые', 'Перфораторы', 'Клинья', 'Отбойные молотки']
+									a(href="#").equipment__item
+										figure.equipment__item-img
+											img(src="img/photos/2-"+(i+1)+".jpg", alt="")
+										.equipment__item-title=title
+						.equipment
+							.equipment-title Оборудование для карьеров 
+							.equipment__list
+								each title, i in ['Канат алмазный', 'Сегмент алмазный', 'Шлифовальный и полировальный инструмент', 'Пилы по камню станочные', 'Диски по камню (ручные)']
+									a(href="#").equipment__item
+										figure.equipment__item-img
+											img(src="img/photos/3-"+(i+1)+".jpg", alt="")
+										.equipment__item-title=title
+
+								
+
+				
+
+
+
+			include inc/footer.jade
+		include inc/scripts.jade

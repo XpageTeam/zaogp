@@ -1,0 +1,59 @@
+html
+	head
+		meta(charset="utf-8")
+		title Объекты
+		include inc/head.jade
+		include inc/css.jade
+	body.inner
+		#page-wr
+			#content
+				include inc/header.jade
+				.title-block__cont
+					.wrapper
+						.title-block
+							.title-block__crumbs
+								.bread-crumbs
+									a.bread-crumbs__link(href='#') Главная
+									span.bread-crumbs__this Объекты
+							.title-block__title
+								h1 Объекты
+				.wrapper
+					.object
+						.object__list
+							a(href="#").object__item
+								figure.object__item-img
+									img(src="img/photos/object-1.jpg", alt="")
+								.object__item-title Название объекта
+							a(href="#").object__item
+								figure.object__item-img
+									img(src="img/photos/object-2.jpg", alt="")
+								.object__item-title Название объекта
+							a(href="#").object__item
+								figure.object__item-img
+									img(src="img/photos/object-3.jpg", alt="")
+								.object__item-title Название объекта
+							a(href="#").object__item
+								figure.object__item-img
+									img(src="img/photos/object-2.jpg", alt="")
+								.object__item-title Название объекта
+							a(href="#").object__item
+								figure.object__item-img
+									img(src="img/photos/object-3.jpg", alt="")
+								.object__item-title Название объекта
+							a(href="#").object__item
+								figure.object__item-img
+									img(src="img/photos/object-1.jpg", alt="")
+								.object__item-title Название объекта
+							a(href="#").object__item
+								figure.object__item-img
+									img(src="img/photos/object-3.jpg", alt="")
+								.object__item-title Название объекта
+							a(href="#").object__item
+								figure.object__item-img
+									img(src="img/photos/object-2.jpg", alt="")
+								.object__item-title Название объекта
+
+
+
+			include inc/footer.jade
+		include inc/scripts.jade

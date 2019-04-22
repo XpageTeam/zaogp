@@ -1,0 +1,988 @@
+$output-bourbon-deprecation-warnings: false;
+@import "bourbon"
+@import "vars"
+
+
+@media screen and (min-width: 2550px)
+	.promo__item-cont
+		padding: 430px 0 105px
+		
+@media screen and (min-width: 1930px)
+	.promo__item-cont
+		padding: 262px 0 105px
+
+@media screen and (max-width: 1600px)
+
+	.main-prod_title
+		padding: 55px
+
+	.main-prod_item
+		max-height: 425px
+
+		video
+			top: -22px
+		
+@media screen and (max-width: 1500px)
+
+	.category
+
+		&__info
+			&-text
+				margin-top: 60px
+
+	.promo-video-cont video
+		height: 490px
+
+	.main-
+		&slide
+			margin-left: 1.5vw
+		&slider
+			margin-left: -1.5vw
+
+	.footer-
+		padding: 65px 0
+
+		&top_item
+			&:nth-child(2)
+				padding-left: vw(30)
+
+			&:nth-child(3)
+				padding-left: vw(30)
+
+		&dev
+			padding-right: 0
+
+	#content
+		margin-bottom: 75px
+
+	.main-slider_block
+		margin-top: 65px
+
+	.page-promo
+
+		.title-block
+			&__title
+				font-size: 3.5625rem
+
+			&__cont
+				margin-bottom: 100px
+
+		#content
+			background-size: 100%
+
+
+
+	.promo
+		&__item
+			&-cont
+				padding: 90px 0 70px
+
+			&:nth-child(odd) 
+
+				.promo__item-img
+					margin-left: 50px
+
+			&:nth-child(even) 
+				.promo__item-img
+					margin-right: 50px
+
+	.offer
+		padding: 75px 0
+
+		&__title 
+			font-size: 2.5rem
+			margin-bottom: 12px
+
+
+@media screen and (max-width: 1300px)
+
+	.footer- ul
+		margin-bottom: 25px
+
+	.main-slider_info
+		padding: 40px 40px 40px 60px
+
+	.promo-video-cont 
+		video
+			height: 490px
+
+	.main-prod_item
+		width: calc((100% - 33px * 3) / 3)
+		height: auto
+		max-height: 100%
+
+	.head-
+		margin-bottom: 25px
+		padding: 20px 0 20px
+
+	.main-slider_block
+		margin-top: 35px
+
+	#content
+		margin-bottom: 40px
+
+	.footer-
+		padding: 35px 0
+
+	.footer-top_item_title
+		margin-bottom: 10px
+		
+
+
+
+
+@media screen and (max-width: 1200px)
+
+	.promo-video-cont 
+		video
+			height: 370px
+
+	.main-prod_item
+		max-height: 275px
+
+	.main-prod_block
+		margin: 0 0 -30px -20px
+
+	.main-prod_item video
+		top: -14px
+
+
+	.map, .ymaps-map 
+		width: 100% !important
+
+
+
+
+	.head
+		&-adress_block
+			display: flex
+
+			a
+				margin-left: 0 !important
+				margin-bottom: 10px
+
+
+
+		&-nav ul li:not(:first-child)
+			margin-left: vw(40)
+
+	.main
+		&-prod
+			&_item
+
+
+			&_block
+				flex-wrap: wrap
+
+			&_title
+				padding: 1.4rem
+				font-size: rem(18)
+		
+		&-slide
+			margin: 0 10px				
+
+
+		&-slider
+			width: 100%
+			order: 2
+			margin: 0
+
+			.slick-track
+				margin: 0 -10px
+
+
+			&_block
+				flex-direction: column
+				margin-top: 45px
+
+
+			&_info
+				width: 100%;
+				padding: 0 0 20px 0
+
+				&_title
+					margin-bottom: 25px
+
+					br 
+						display: none
+
+
+						
+	.footer
+		&-top
+			flex-wrap: wrap
+
+		&-top
+			&_item
+				padding-left: 0 !important
+				padding-right: 10px
+
+	.head-
+		margin-bottom: 30px
+
+	.title-block__title
+		margin-top: 15px
+
+	.title-block__cont
+		margin-bottom: 20px
+
+	.equipment
+		&__item
+			padding: 1.4rem
+
+		&:not(:first-child)
+			margin-top: 40px
+
+	.page-promo 
+		.head-
+			padding: 36px 0
+
+		.head-
+			margin-bottom: 50px
+
+		#content
+			background-size: 100%
+
+		.title-block__title
+			font-size: 2.5625rem
+
+	.promo
+		&__item
+			&-img
+				&:before 
+					display: none !important
+				img
+					max-width: 375px
+			&-cont
+				padding: 60px 0
+
+		&__info-title
+			font-size: 1.4rem
+			margin-bottom: 13px
+
+	.offer
+		padding: 50px 0
+
+
+
+
+@media screen and (max-width: 1000px)
+
+	.category
+
+		&__info
+			&-text
+				margin-top: 50px
+
+	.promo__item-cont
+		padding: 30px 0
+
+
+	.head-logo
+		margin-left: -65px
+
+	.page-promo .head-
+		margin-bottom: 36px
+
+	.promo-video-cont video
+		height: 230px
+
+
+
+	.contacts
+		&__list
+			flex-direction: column
+
+		&__item
+			&-title
+				margin-bottom: 25px
+
+			&:first-child
+				display: flex
+				flex-wrap: wrap
+
+				.contacts
+					&__item-title
+						width: 100%
+
+					&-el 
+						width: calc((100% - 20px * 2) / 2)
+						margin:  0 0 20px 0
+
+		&-el
+			padding-left: 60px
+
+			&:not(:first-child)
+				margin-top: 20px
+
+
+		&-forms
+			max-width: 100%
+			margin-top: 30px
+
+	.page-promo 
+		.head-
+			padding: 1.4rem 0
+
+		.title-block__cont
+			margin-bottom: 0
+
+		#content
+			background-size: 100%
+
+
+
+	
+	.equipment
+		&__item
+			width: calc((100% - 20px * 2) / 2)
+			margin: 0 0 30px 20px
+
+	.sale
+		&__list
+			margin: 0 0 -30px -20px
+		&__item
+			width: calc((100% - 20px * 3) / 3)
+			margin: 0 0 30px 20px
+
+	.burger
+		display: flex 
+
+
+	.head-adress_block
+		display: none
+
+	.head-
+		margin-bottom: 40px
+		padding: 1.4rem 0
+
+	.main-prod_item
+		width: calc((100% - 20px * 3) / 3)
+		margin: 0 0 30px 20px
+
+
+	.footer-
+		padding: 1.4rem 0
+
+		&top
+			display: flex
+
+			&_item
+				display: none
+
+	#content
+		margin-bottom: 40px
+
+	.image
+		&--right
+			margin-left: 30px
+			max-width: 290px
+
+		&--figcaption
+			padding: 1.4rem
+
+	.head-
+		margin-bottom: 40px
+
+	.object
+		&__list 
+			margin: 0 0 -30px -20px
+			
+		&__item 
+			width: calc((100% - 20px * 2) / 2)
+			margin: 0 0 30px 20px
+
+			&-title
+				margin-top: 10px;
+
+	.promo
+		&__item
+			&-cont
+				align-items: flex-start
+
+			&:nth-child(odd) 
+				.promo__item-img
+					margin-left: 31px
+
+			&-img img
+				max-width: 320px
+
+			&:nth-child(even) 
+				.promo__item-img
+					margin-right: 30px
+
+		&__info-title
+			font-size: 1.2rem
+
+	.offer
+		&__title
+			font-size: 2rem
+			margin-bottom: 10px
+
+		&__text 
+			br 
+				display: none
+
+	#page-wr
+		transition: transform .3s ease
+		background: #fff
+
+	.js__back
+		display: block
+	.js__menu-open
+		#page-wr
+			transform: translate3d(-250px,0,0)
+
+	.footer-top_item:nth-child(2)
+		order: 0
+
+	.footer-top_soc
+		padding: 15px
+		justify-content: space-between
+		&_a
+			height: 35px
+			width: 35px
+			margin: 0
+
+	.mobile-menu
+		display: flex
+		flex-direction: column
+		position: absolute
+		top: 0
+		right: 0
+		width: 250px
+		height: 100%
+		background: #fff
+		overflow-x: hidden
+
+		.callback
+			a 
+				background: transparent
+				color: #000
+				text-decoration: none
+				border-bottom: 1px solid #eee
+				border-radius: 0
+				display: block
+				padding: 15px
+				
+
+		.footer-top_item
+			&:nth-child(3)
+				order: 3
+				display: block
+
+			.footer-top_soc
+				display: flex
+		.footer-top_soc
+
+			.footer-top_soc_title
+				display: none
+
+			&_a
+				filter: invert(1)
+
+		.head-adress_block
+			display: block
+
+			a 
+				color: #000
+				text-decoration: none 
+				padding: 15px
+				display: block
+				margin: 0
+				border-bottom: 1px solid #eee
+
+		.head-tel
+			margin: 0
+
+		.footer
+			&-top
+				&_item
+					display: block
+					width: 100%
+					padding: 0
+					margin: 0
+					border-bottom: 1px solid #eee
+
+					ul 
+						position: absolute
+						top: 0
+						right: 0
+						height: 100%
+						width: 250px
+						background: #fff
+						transform: translate3d(100%,0,0)
+						transition: transform .3s ease
+						z-index: 10
+
+
+
+						a 
+							display: block
+							padding: 15px
+							text-decoration: none 
+							font-size: rem(16)
+
+					li 
+						border-bottom: 1px solid #eee
+
+				
+
+			&-title
+				position: relative
+				color: #000
+				margin: 0
+				padding: 15px
+				padding-right: 30px
+				
+
+				&:after 
+					content: ''
+					position: absolute
+					right: 15px
+					top: calc(50% - 5px)
+					+size(10px)
+					border: 
+						top: 1px solid #000
+						right: 1px solid #000
+					transform: rotate(45deg)
+
+		.head-nav
+			display: block
+
+			a 
+				display: block
+				padding: 15px
+				color: #000
+				text-decoration: none
+				font-size: 1rem
+				font-weight: 300
+
+
+			ul
+				display: flex
+				flex-direction: column
+				transition: transform .3s ease
+
+			li 
+				margin: 0 !important
+				border-bottom: 1px solid #eee
+
+				&:nth-child(1), &:nth-child(2)
+					display: none
+
+	.footer-title
+		text-transform: none
+		font-weight: 300
+		font-size: rem(16)
+
+
+
+	.js__back
+		position: relative
+		padding: 15px
+		padding-left: 40px
+		font-size: rem(16)
+		color: #000
+		border-bottom: 1px solid #eee
+
+		&:before 
+			content: ''
+			position: absolute
+			left: 15px
+			top: calc(50% - 5px)
+			+size(10px)
+			border: 
+				top: 1px solid #000
+				left: 1px solid #000
+			transform: rotate(-45deg)
+
+
+	.js__submenu-open.footer-top_item
+		ul
+
+			transform: translate3d(0,0,0)
+
+	.tovar
+		display: block
+
+		&:after
+			content: ''
+			display: table
+			clear: both
+
+		&__image, &__buy
+			float: right
+			width: 45%
+
+		&__desc
+			float: left
+			width: 50%
+
+		&__image
+			margin-right: 0
+			margin-bottom: 25px
+
+	.head-logo
+		margin-left: -140px
+
+	.bread-crumbs__link:after
+		margin-left: 10px
+		padding-right: 10px
+
+	#page-wr
+		z-index: 10
+
+@media screen and (max-width: 800px)
+
+	.head
+		&-nav
+			display: none
+
+		.burger
+			display: flex !important
+			align-self: center
+
+@media screen and (max-width: 660px)
+
+	.category
+
+		&__info
+			&-text
+				margin-top: 30px
+
+	.main-prod_item
+		overflow: hidden
+
+	
+	.mobile-link
+		display: block
+	
+		border-bottom: 1px solid #eee
+
+	.fancybox-active
+		#page-wr
+			display: none
+
+		.forms
+			width: 100% !important
+			height: 100% !important
+			margin: 0 !important
+			padding: 1.4rem !important
+			
+
+	.head-logo
+		margin-left: 0
+
+	.callback
+		display: none
+
+	.mobile-menu
+		.callback
+			display: block
+
+			a 
+				color: #000
+				padding: 15px
+				text-decoration: none
+				display: block
+				border-bottom: 1px solid #eee
+				
+		
+
+	.promo-video-cont
+		top: 200px
+
+		video
+			width: 125%
+
+		~ .wrapper, ~ .about 
+			margin-top: 270px
+		
+
+	.page-promo
+		.title-block__title h1
+			color: #222f41
+
+	.bread-crumbs
+		&__link
+			position: relative
+			padding-left: 15px
+			
+
+			&:after
+				content: ''
+				position: absolute
+				left: 0
+				top: 5px
+				margin: 0 !important
+				padding: 0 !important
+				+size(8px)
+				border: 
+					left: 1px solid #000
+					top: 1px solid #000
+				transform: rotate(-45deg)
+
+			&:not(:nth-last-child(2))
+				display: none
+
+		&__this 
+			display: none
+			
+
+
+	.map, .ymaps-map 
+		height: 250px !important
+
+	
+	.category__item-title
+		font-size: 1.2rem
+		line-height: 1.2
+	
+	.tovar
+		display: flex
+		flex-direction: column
+
+		&__image, &__desc, &__buy
+			width: 100%
+
+		&__desc
+			margin-right: 0
+
+		&__buy
+			margin: 30px 0 0
+
+	.contacts
+		&__item
+			&-title
+				font-size: 1.5rem
+
+			&:first-child
+				flex-direction: column
+
+				.contacts-el
+					width: 100%
+					background-size: 20px
+
+		&-el 
+			padding-left: 40px
+
+		&-label
+			margin-bottom: 0
+
+		&-forms
+			margin-top: 20px
+
+	.map
+		margin-top: 45px
+
+
+
+
+
+
+
+
+	.page-promo 
+
+		#content 
+			background: none !important
+
+		.bread-crumbs
+			justify-content: flex-start
+
+			&__link, &__this
+				color: #000
+
+
+		.title-block__title
+			color: #000
+			text-align: left
+
+
+		.head-
+			background: $main-color
+
+
+
+	.promo__item
+		&-cont
+			flex-direction: column
+			padding: 1.4rem 0
+
+		&:nth-child(odd)
+			.promo__item
+				&-cont
+					flex-direction: column-reverse
+
+				&-img
+					margin-left: 0
+
+		&:nth-child(even) 
+			.promo__item-cont
+				flex-direction: column-reverse
+
+
+		&-img
+			margin-bottom: 1.4rem !important
+
+	.object
+		&__list 
+			margin: 0
+			
+		&__item 
+			width: 100%
+			margin: 0 0 30px 00
+
+	.equipment
+		&__list
+			margin: 0
+
+		&__item
+			width: 100%
+			margin: 0 0 30px 0
+
+		&-title
+			margin-bottom: 10px;
+
+	.sale
+		&__list
+			margin: 0
+		&__item
+			width: 100%
+			margin: 0 0 30px 0
+
+			img 
+				width: 100%
+				object-fit: cover
+				object-position: center
+
+	.category
+		&__list
+			margin: 0
+
+		&__item
+			width: 100%
+			margin: 0 0 30px
+
+			&-title
+				margin-bottom: 15px;
+
+	.paginator
+		margin-top: 20px
+
+	.image--right
+		margin-left: 0;
+		max-width: 100%;
+		float: none
+
+	.inner
+		.head-
+			margin-bottom: 20px
+
+	.title-block
+		&__cont
+			margin-bottom: 10px
+
+		&__title
+			margin-top: 10px
+			h1
+				font-size: 20px
+
+	.text-page 
+		br 
+			display: none
+
+		h2
+			font-size: 1.2rem
+			line-height: 1.4rem
+
+		h3
+			font-size: 1.1rem
+			line-height: 1.3rem
+
+		h4
+			font-size: 1rem
+			line-height: 1.3rem
+
+	.bread-crumbs
+		&__link:after
+			margin-left: 8px
+			padding-right: 10px
+
+		&__this 
+			// display: none
+
+	.main-
+		&prod_item
+			width: 100%;
+			
+			&:after
+				left: 20px;
+
+
+	.main
+		&-prod
+			&_block
+				margin: 0 0 -30px 0
+
+			&_item
+				margin: 0 0 30px 0
+
+		&-slider_info_title
+			font-size: 1.5rem
+
+		&-slide
+			margin: 0
+
+	.main
+		&-slide
+			padding: 1.4rem 
+
+			&:not(:first-child)
+				margin-top: 20px
+
+			&_text
+				margin-top: 20px
+
+		&-slider
+			margin-top: 20px
+			&_info
+				padding: 0
+
+				&_title
+					margin-bottom: 0
+
+	.wrapper-big
+		padding: 0 1.4rem
+
+	.main-slider_block
+		margin-top: 35px
+
+	.footer
+		&-copy
+			white-space: nowrap
+
+		&-dev
+			&_text
+				display: none
+				
+
+@media screen and (max-width: 480px)
+	.footer-
+		&top_item
+			width: 100%;
+			padding-right: 0px;
+
+
+
+	.head-
+		&adress_block
+			font-size: 15px
+
+	.promo__item-img 
+		img
+			width: 100%
+
+	.promo__item:nth-child(even) .promo__item-img
+		margin-right: 0

@@ -1,0 +1,36 @@
+html
+	head
+		meta(charset="utf-8")
+		title Изделия из гранита
+		include inc/head.jade
+		include inc/css.jade
+	body.inner
+		#page-wr
+			#content
+				include inc/header.jade
+				.title-block__cont
+					.wrapper
+						.title-block
+							.title-block__crumbs
+								.bread-crumbs
+									a.bread-crumbs__link(href='#') Главная
+									span.bread-crumbs__this Изделия из гранита
+							.title-block__title
+								h1 Изделия из гранита
+				.wrapper
+					.category
+						.category__list
+							each title, i in ['Плиты', 'Брусчатка', 'Бордюры']
+								a(href="#").category__item
+									.category__item-title=title
+									figure.category__item-img
+										img(src="img/photos/category-"+(i+1)+".jpg", alt="")
+
+								
+
+				
+
+
+
+			include inc/footer.jade
+		include inc/scripts.jade
