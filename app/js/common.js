@@ -100,9 +100,8 @@ $(function () {
   var phone = $('.head-adress_block').clone();
   $('.mobile-menu').append(phone);
 
-  // let soc = $('.footer-top_item .footer-top_soc').clone();
-  // $('.mobile-menu').append(soc);
-
+  var cities = $('.city-select').clone();
+  $('.mobile-menu').append(cities);
 
   $(".fancybox").fancybox({
     trapFocus: false,

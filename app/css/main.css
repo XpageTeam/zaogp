@@ -455,6 +455,14 @@ li {
   overflow-x: auto;
 }
 
+.city-select select {
+  padding: 0 25px;
+  color: #fff;
+  border: 0;
+  height: 50px;
+  background: url("../img/ico-map-white.svg") no-repeat left 0 center, url("../img/ico-arrow.svg") no-repeat right 0 center, #222f41;
+}
+
 .mobile-link {
   display: none;
 }
@@ -631,6 +639,7 @@ i.rub {
   border-bottom: 1px solid transparent;
   transition: border-color .3s ease;
   font-weight: 300;
+  white-space: nowrap;
 }
 
 .head-nav a.active, .head-nav a:hover, .head-nav a:active, .head-nav a:focus {
@@ -1780,6 +1789,12 @@ i.rub {
 }
 
 @media screen and (max-width: 1200px) {
+  .head-nav ul li:not(:first-child) {
+    margin-left: 8px;
+  }
+  .city-select select {
+    padding: 0 21px;
+  }
   .promo-video-cont video {
     height: 370px;
   }
@@ -1890,6 +1905,9 @@ i.rub {
 }
 
 @media screen and (max-width: 1000px) {
+  .head- .city-select {
+    display: none;
+  }
   .category__info-text {
     margin-top: 50px;
   }
@@ -2053,6 +2071,16 @@ i.rub {
     background: #fff;
     overflow-x: hidden;
   }
+  .mobile-menu .city-select {
+    order: -1;
+    border-bottom: 1px solid #eee;
+  }
+  .mobile-menu .city-select select {
+    width: 100%;
+    color: #000;
+    padding: 0 40px;
+    background: url("../img/ico-map-black.svg") no-repeat left 15px center, url("../img/ico-arrow-black.svg") no-repeat right 15px center, #fff;
+  }
   .mobile-menu .callback a {
     background: transparent;
     color: #000;
@@ -2064,7 +2092,7 @@ i.rub {
   }
   .mobile-menu .footer-top_item:nth-child(3) {
     order: 3;
-    display: block;
+    display: flex;
   }
   .mobile-menu .footer-top_item .footer-top_soc {
     display: flex;

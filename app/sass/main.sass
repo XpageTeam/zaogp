@@ -1,11 +1,17 @@
-$output-bourbon-deprecation-warnings: false;
+$output-bourbon-deprecation-warnings: false
 @import "bourbon"
 @import "vars"
 @import "base"
 @import "functions"
 
 
-
+.city-select
+	select
+		padding: 0 25px
+		color: #fff
+		border: 0
+		height: 50px
+		background: url('../img/ico-map-white.svg') no-repeat left 0 center, url('../img/ico-arrow.svg') no-repeat right 0 center, $main-color
 
 .mobile-link
 	display: none
@@ -165,6 +171,7 @@ i.rub
 			border-bottom: 1px solid transparent
 			transition: border-color .3s ease
 			font-weight: 300
+			white-space: nowrap
 
 			&.active, &:hover, &:active, &:focus
 				border-bottom: 1px solid #fff

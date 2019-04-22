@@ -84,8 +84,6 @@ $(() => {
 
     $('.mobile-menu').append(menuItem);
 
-
-
   });
 
   $('.footer-title').click(function() {
@@ -114,8 +112,8 @@ $(() => {
   let phone = $('.head-adress_block').clone();
   $('.mobile-menu').append(phone);
 
-  // let soc = $('.footer-top_item .footer-top_soc').clone();
-  // $('.mobile-menu').append(soc);
+  let cities = $('.city-select').clone();
+  $('.mobile-menu').append(cities);
 
 
   $(".fancybox").fancybox({

@@ -133,6 +133,12 @@ $output-bourbon-deprecation-warnings: false;
 
 @media screen and (max-width: 1200px)
 
+	.head-nav ul li:not(:first-child)
+		margin-left: 8px
+
+	.city-select select
+		padding: 0 21px
+
 	.promo-video-cont 
 		video
 			height: 370px
@@ -267,6 +273,10 @@ $output-bourbon-deprecation-warnings: false;
 
 
 @media screen and (max-width: 1000px)
+
+	.head-
+		.city-select
+			display: none
 
 	.category
 
@@ -455,6 +465,17 @@ $output-bourbon-deprecation-warnings: false;
 		background: #fff
 		overflow-x: hidden
 
+		.city-select
+			order: -1
+			border-bottom: 1px solid #eee
+
+			select
+				width: 100%
+				color: #000
+				padding: 0 40px
+				background: url('../img/ico-map-black.svg') no-repeat left 15px center, url('../img/ico-arrow-black.svg') no-repeat right 15px center, #fff
+
+
 		.callback
 			a 
 				background: transparent
@@ -469,7 +490,7 @@ $output-bourbon-deprecation-warnings: false;
 		.footer-top_item
 			&:nth-child(3)
 				order: 3
-				display: block
+				display: flex
 
 			.footer-top_soc
 				display: flex
