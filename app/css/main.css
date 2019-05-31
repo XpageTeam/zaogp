@@ -1789,6 +1789,22 @@ i.rub {
 }
 
 @media screen and (max-width: 1200px) {
+  .tovar {
+    flex-wrap: wrap;
+  }
+  .tovar__desc {
+    order: 1;
+    flex: none;
+  }
+  .tovar__buy {
+    margin-left: auto;
+  }
+  .tovar-buy__type-count {
+    width: auto;
+  }
+  .tovar-buy__type-count p {
+    margin-bottom: 5px;
+  }
   .head-nav ul li:not(:first-child) {
     margin-left: 8px;
   }
@@ -2221,12 +2237,13 @@ i.rub {
     clear: both;
   }
   .tovar__image, .tovar__buy {
-    float: right;
+    float: left;
     width: 45%;
   }
   .tovar__desc {
     float: left;
     width: 50%;
+    margin: 0 0 20px 0;
   }
   .tovar__image {
     margin-right: 0;
@@ -2251,6 +2268,13 @@ i.rub {
   .head .burger {
     display: flex !important;
     align-self: center;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .tovar__desc {
+    order: 0;
+    margin-bottom: 0;
   }
 }
 

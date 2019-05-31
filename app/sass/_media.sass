@@ -133,6 +133,22 @@ $output-bourbon-deprecation-warnings: false;
 
 @media screen and (max-width: 1200px)
 
+	.tovar
+		flex-wrap: wrap
+
+		&__desc
+			order: 1
+			flex: none
+
+		&__buy
+			margin-left: auto
+
+		&-buy__type-count
+			width: auto
+
+			p 
+				margin-bottom: 5px
+
 	.head-nav ul li:not(:first-child)
 		margin-left: 8px
 
@@ -273,6 +289,8 @@ $output-bourbon-deprecation-warnings: false;
 
 
 @media screen and (max-width: 1000px)
+
+
 
 	.head-
 		.city-select
@@ -633,12 +651,13 @@ $output-bourbon-deprecation-warnings: false;
 			clear: both
 
 		&__image, &__buy
-			float: right
+			float: left
 			width: 45%
 
 		&__desc
 			float: left
 			width: 50%
+			margin: 0 0 20px 0
 
 		&__image
 			margin-right: 0
@@ -664,7 +683,14 @@ $output-bourbon-deprecation-warnings: false;
 			display: flex !important
 			align-self: center
 
+@media screen and (max-width: 667px)
+
+	.tovar__desc
+		order: 0
+		margin-bottom: 0
+
 @media screen and (max-width: 660px)
+
 
 	.category
 
