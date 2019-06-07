@@ -1488,6 +1488,11 @@ i.rub {
   line-height: 1.5;
 }
 
+.contacts__item-title h1 {
+  font-weight: bold;
+  color: #222f41;
+}
+
 .contacts__list {
   display: flex;
   justify-content: space-between;
@@ -2377,7 +2382,7 @@ i.rub {
   }
   .contacts__item:first-child .contacts-el {
     width: 100%;
-    background-size: 20px;
+    background-size: 20px !important;
   }
   .contacts-el {
     padding-left: 40px;
@@ -2387,6 +2392,9 @@ i.rub {
   }
   .contacts-forms {
     margin-top: 20px;
+  }
+  .contacts-text {
+    white-space: pre-wrap !important;
   }
   .map {
     margin-top: 45px;
