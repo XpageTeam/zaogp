@@ -455,6 +455,10 @@ li {
   overflow-x: auto;
 }
 
+.tovar-buy__type {
+  align-items: flex-end;
+}
+
 .city-select select {
   padding: 0 25px;
   color: #fff;
@@ -2246,7 +2250,7 @@ i.rub {
     width: 45%;
   }
   .tovar__desc {
-    float: left;
+    float: right;
     width: 50%;
     margin: 0 0 20px 0;
   }
@@ -2284,6 +2288,16 @@ i.rub {
 }
 
 @media screen and (max-width: 660px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+  .tovar-desc__table {
+    table-layout: fixed;
+  }
+  .tovar-desc__table td {
+    padding: 4px;
+    font-size: 14px;
+  }
   .category__info-text {
     margin-top: 30px;
   }
