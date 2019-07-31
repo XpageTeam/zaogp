@@ -578,37 +578,37 @@ i.rub {
   transition: top .3s,transform .3s .5s;
 }
 
-#callback {
+#callback, #php_form_addOrder {
   max-width: 441px;
 }
 
-#callback .forms-input-cont {
+#callback .forms-input-cont, #php_form_addOrder .forms-input-cont {
   margin: 0;
   width: 100%;
 }
 
-#callback .forms-input-cont:not(:last-child) {
+#callback .forms-input-cont:not(:last-child), #php_form_addOrder .forms-input-cont:not(:last-child) {
   margin-bottom: 20px;
 }
 
-#callback .forms-wrap {
+#callback .forms-wrap, #php_form_addOrder .forms-wrap {
   margin: 0;
 }
 
-#callback .forms-wrap--bot {
+#callback .forms-wrap--bot, #php_form_addOrder .forms-wrap--bot {
   flex-wrap: wrap;
 }
 
-#callback .forms-submit-cont {
+#callback .forms-submit-cont, #php_form_addOrder .forms-submit-cont {
   margin-top: 30px;
   width: 100%;
 }
 
-#callback .recaptcha {
+#callback .recaptcha, #php_form_addOrder .recaptcha {
   width: 100%;
 }
 
-#callback .contacts__item-title {
+#callback .contacts__item-title, #php_form_addOrder .contacts__item-title {
   text-align: center;
   margin-bottom: 30px;
   font-size: 1.625rem;
@@ -1680,6 +1680,46 @@ i.rub {
 
 .tovar-desc__table tr:nth-child(odd) td {
   background: #f2f2f2;
+}
+
+@media screen and (max-width: 1000px) {
+  @supports (display: grid) {
+    .tovar {
+      display: grid !important;
+      grid-template-areas: "image desc" "buy buy";
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
+    .tovar:after {
+      display: none;
+    }
+    .tovar__image {
+      grid-area: image;
+      float: none !important;
+      width: 100% !important;
+      margin: 0 !important;
+    }
+    .tovar__desc {
+      grid-area: desc;
+      width: 100% !important;
+      margin: 0 !important;
+    }
+    .tovar__buy {
+      grid-area: buy;
+      grid-column: span 2;
+      float: none;
+      margin-right: auto;
+      margin-left: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 667px) {
+  @supports (display: grid) {
+    .tovar {
+      display: flex !important;
+    }
+  }
 }
 
 @media screen and (min-width: 2550px) {

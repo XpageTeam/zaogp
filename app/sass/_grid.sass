@@ -1,2 +1,43 @@
 @import "vars"
 @import "functions"
+
+
+
+@media screen and (max-width: 1000px)
+
+	@supports (display: grid)
+		
+		.tovar
+			display: grid !important
+			grid-template-areas: "image desc" "buy buy"
+			grid-template-columns: repeat(2, 1fr)
+			grid-gap: 30px
+
+			&:after
+				display: none
+
+			&__image
+				grid-area: image
+				float: none !important
+				width: 100% !important
+				margin: 0 !important
+
+			&__desc
+				grid-area: desc
+				width: 100% !important
+				margin: 0 !important
+
+			&__buy
+				grid-area: buy
+				grid-column: span 2
+				float: none
+				margin-right: auto
+				margin-left: 0 !important
+
+
+@media screen and (max-width: 667px)
+
+	@supports (display: grid)
+		
+		.tovar
+			display: flex !important
